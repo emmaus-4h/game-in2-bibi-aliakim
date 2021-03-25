@@ -1,20 +1,25 @@
 Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
-## Mijn spel: *naam van het spel*
+## Mijn spel: *flappy bird*
 Gemaakt door:
-- *naam van leerling 1*
-- *naam van leerling 2*
+- Bibi 
+- Eliakim
 
 ## Mijn planning
 
 Basis: uitleg, spelen, afgaan en punten
 - [x] maak index.html, style.css en script.js met canvas
-- [ ] teken speler
-- [ ] beweeg speler
-- [ ] ... *(vul zelf aan)*
+- [ ] teken vogel (flappy bird)
+- [ ] beweeg speler 
+- [ ] teken lucht
+- [ ]
+- [ ] maak buizen (attributen )
 - [ ] punten op scherm zetten
-- [ ] punten kunnen scoren
+- [ ] punten kunnen scoren 
+- muntjes maken (kleur goud) 
 - [ ] uitlegscherm
+- naast de game staat de uitleg hoe je het moet spelen. 
+- [ ] 
 
 Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 - [ ] *later uitwerken*
