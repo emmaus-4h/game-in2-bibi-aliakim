@@ -1,6 +1,6 @@
 Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 
-## Mijn spel: *flappy bird*
+## Ons spel : *flappy bird*
 Gemaakt door:
 - Bibi 
 - Eliakim
@@ -14,6 +14,7 @@ Basis: uitleg, spelen, afgaan en punten
 - [ ] teken blauwe lucht
 - [ ] maak de grond bruin met groen 
 - [ ] maak buizen (attributen )
+- [ ] maak achtergrond gebouwen en lucht 
 - [ ] punten op scherm zetten
 - [ ] punten kunnen scoren 
 - muntjes maken (kleur goud) 
