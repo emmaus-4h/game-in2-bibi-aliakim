@@ -26,6 +26,7 @@ Basis: uitleg, spelen, afgaan en punten
 - [ ] punten staann boven de vogel
 - [ ] als je dood gaat dan komt er een blokje van je  score en highscore
 - [ ] onder score en highscore blokje met 'restart'
+- [ ] als je dood bent begin je weer opnieuw bij begin vanaf 
 
 Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 - [ ] *later uitwerken*
