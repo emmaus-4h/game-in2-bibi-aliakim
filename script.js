@@ -78,9 +78,10 @@ var tekenKogel = function(x, y) {
  * @param {number} x x-coördinaat
  * @param {number} y y-coördinaat
  */
-var tekenSpeler = function(x, y) {
-  fill("white");
-  ellipse(x, y, 50, 50);
+var tekenSpeler = function (x, y) {
+      ellipse (650, 350, 217, 150);
+      ellipse (599, 340, 90, 50 );
+      ellipse ();
 };
 
 
@@ -180,6 +181,7 @@ function draw() {
       tekenVijand(vijandX, vijandY);
       tekenKogel(kogelX, kogelY);
       tekenSpeler(spelerX, spelerY);
+      
 
       if (checkGameOver()) {
         spelStatus = GAMEOVER;
