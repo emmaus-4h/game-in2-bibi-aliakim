@@ -46,7 +46,7 @@ var score = 0; // aantal behaalde punten
  * Tekent het speelveld
  */
 var tekenVeld = function () {
-  fill("#cee8fd")
+  fill("#c3dbef")
   rect(20, 20, width - 2 * 20, height - 2 * 20);
 };
 
@@ -82,8 +82,9 @@ var tekenSpeler = function (x, y) {
 
   ellipse(650, 350, 217, 150);
   ellipse(599, 340, 90, 50);
-  ellipse();
-};
+  ellipse(710, 300, 55, 80);
+  ellipse(710, 300, 10, 10);
+  };
 
 
 /**
@@ -152,7 +153,7 @@ function setup() {
   createCanvas(1210, 720);
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
-  background("blue");
+  background("black");
 }
 
 
