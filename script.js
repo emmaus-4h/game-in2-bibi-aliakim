@@ -84,6 +84,7 @@ var tekenSpeler = function (x, y) {
   ellipse(599, 340, 90, 50);
   ellipse(710, 300, 55, 80);
   ellipse(710, 300, 10, 10);
+
   };
 
 
