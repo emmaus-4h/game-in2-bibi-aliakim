@@ -79,12 +79,12 @@ var tekenKogel = function (x, y) {
  * @param {number} y y-coördinaat
  */
 var tekenSpeler = function (x, y) {
-
   ellipse(650, 350, 217, 150);
   ellipse(599, 340, 90, 50);
   ellipse(710, 300, 55, 80);
   ellipse(710, 300, 10, 10);
-
+  ellipse(730, 385, 75, 15); 
+  ellipse(730, 370, 85, 17);
   };
 
 
