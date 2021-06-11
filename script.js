@@ -49,13 +49,43 @@ let gameImages
 
 function preLoad() {
 }
+var berekenHoogte = (pipeImage) => {
+  return pipeImage.height
+}
+var maakAfstandTussenPilaren = (num) => {
+  var base = 100
+  var distance = 300
+  return base + distance * num
+}
+var makePillars = () => {
 
+  var pijpN = gameImages.get(89, 506, 38, 250)
+  var pijpZ = gameImages.get(0, 506, 38, 250)
+  var groups = []
+
+  for (let i = 0; i < 10; i++){
+    var height = berekenHoogte(pijpN)
+    var berekendeHoogte = height * i
+    var x = maakAfstandTussenPilaren(i)
+    groups.push({
+      s: {image: pijpZ, x, y: pijpN.height + 50, w: pijpZ.width,
+      h: pijpZ.height *2
+      },
+      n: {image: pijpN, x, y:0, w: pijpN.width, h: berekendeHoogte}
+    })
+  }
+  return groups
+}
 /**
  * Tekent het speelveld
  */
 var tekenVeld = function () {
   rect(0, height - 40, width, 40)
   fill("green")
+  makePillars().forEach((imageGroup) => {
+  image(imageGroup.s.image, imageGroup.s.x, imageGroup.s.y, imageGroup.s.w, imageGroup.s.h)
+  image(imageGroup.n.image, imageGroup.n.x, imageGroup.n.y, imageGroup.n.w, imageGroup.n.h)
+})
 };
 
 
@@ -87,6 +117,7 @@ var tekenKogel = function (x, y) {
  * @param {number} y y-coördinaat
  */
 var tekenVogel = function (x, y) {
+  
   };
 
 
@@ -159,6 +190,7 @@ function setup() {
   background("#c3dbef");
 
   gameImages = loadImage('assets/flappy_images.png')
+
 }
 1
 
