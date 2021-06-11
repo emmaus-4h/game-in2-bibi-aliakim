@@ -33,6 +33,12 @@ var vijandY = 0;   // y-positie van vijand
 
 var score = 0; // aantal behaalde punten
 
+let bird
+let birdUp
+let birdDown
+let brgImg
+let gameImages
+
 
 
 
@@ -41,13 +47,15 @@ var score = 0; // aantal behaalde punten
 /*      functies die je gebruikt in je game      */
 /* ********************************************* */
 
+function preLoad() {
+}
 
 /**
  * Tekent het speelveld
  */
 var tekenVeld = function () {
-  fill("#c3dbef")
-  rect(20, 20, width - 2 * 20, height - 2 * 20);
+  rect(0, height - 40, width, 40)
+  fill("green")
 };
 
 
@@ -78,13 +86,7 @@ var tekenKogel = function (x, y) {
  * @param {number} x x-coördinaat
  * @param {number} y y-coördinaat
  */
-var tekenSpeler = function (x, y) {
-  ellipse(650, 350, 217, 150);
-  ellipse(599, 340, 90, 50);
-  ellipse(710, 300, 55, 80);
-  ellipse(710, 300, 10, 10);
-  ellipse(730, 385, 75, 15); 
-  ellipse(730, 370, 85, 17);
+var tekenVogel = function (x, y) {
   };
 
 
@@ -108,7 +110,7 @@ var beweegKogel = function () {
  * Kijkt wat de toetsen/muis etc zijn.
  * Updatet globale variabele spelerX en spelerY
  */
-var beweegSpeler = function () {
+var beweegVogel = function () {
 
 };
 
@@ -151,12 +153,14 @@ var checkGameOver = function () {
  */
 function setup() {
   // Maak een canvas (rechthoek) waarin je je speelveld kunt tekenen
-  createCanvas(1210, 720);
+  createCanvas(420, 920);
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
-  background("black");
-}
+  background("#c3dbef");
 
+  gameImages = loadImage('assets/flappy_images.png')
+}
+1
 
 /**
  * draw
@@ -164,11 +168,12 @@ function setup() {
  * uitgevoerd door de p5 library, nadat de setup functie klaar is
  */
 function draw() {
+  /*
   switch (spelStatus) {
     case SPELEN:
       beweegVijand();
       beweegKogel();
-      beweegSpeler();
+      beweegVogel();
 
       if (checkVijandGeraakt()) {
         // punten erbij
@@ -183,7 +188,7 @@ function draw() {
       tekenVeld();
       tekenVijand(vijandX, vijandY);
       tekenKogel(kogelX, kogelY);
-      tekenSpeler(spelerX, spelerY);
+      tekenVogel(spelerX, spelerY);
 
 
       if (checkGameOver()) {
@@ -191,4 +196,7 @@ function draw() {
       }
       break;
   }
+  */
+  tekenVeld()
+  tekenVogel()
 }
