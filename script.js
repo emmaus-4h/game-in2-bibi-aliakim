@@ -54,7 +54,7 @@ var berekenHoogte = (pipeImage) => {
 }
 var maakAfstandTussenPilaren = (num) => {
   var base = 100
-  var distance = 300
+  var distance = 250
   return base + distance * num
 }
 var makePillars = () => {
@@ -68,7 +68,7 @@ var makePillars = () => {
     var berekendeHoogte = height * i
     var x = maakAfstandTussenPilaren(i)
     groups.push({
-      s: {image: pijpZ, x, y: pijpN.height + 50, w: pijpZ.width,
+      s: {image: pijpZ, x, y: pijpN.height + 150, w: pijpZ.width,
       h: pijpZ.height *2
       },
       n: {image: pijpN, x, y:0, w: pijpN.width, h: berekendeHoogte}
