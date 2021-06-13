@@ -18,7 +18,8 @@ const PLAY = 1;
 const GAMEOVER = 2;
 const bX = 200
 const bY = 200
-const JUMP = -10
+const JUMP = -6
+const GRAVITY = 1.5
 let spelStatus
 
 var score = 0; // aantal behaalde punten
@@ -26,7 +27,7 @@ var score = 0; // aantal behaalde punten
 const cHeight = 400
 const cWidth = 420
 const grondHoogte = 40
-const GAP = 75
+const GAP = 100
 
 let pilaren
 let bird = {}
@@ -189,7 +190,7 @@ function draw() {
       if(keyIsPressed) {
         beweegVogel(JUMP)
       } else {
-        beweegVogel(1)
+        beweegVogel(GRAVITY)
       }
       // if (collision) {
       //   spelStatus = GAMEOVER;
