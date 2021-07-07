@@ -172,8 +172,8 @@ const reset = (cont) => {
 }
 
 function mouseClicked() 
-{gameState==='PAUSED'?
-gameState='PLAY': gameState= 'PAUSED'}
+{gameState===PAUSED?
+gameState=PLAY: gameState= PAUSED}
 
 /**
  * draw
