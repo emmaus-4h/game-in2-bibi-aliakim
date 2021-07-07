@@ -28,6 +28,7 @@ const cHeight = 400
 const cWidth = 420
 const grondHoogte = 40
 const GAP = 100
+const PAUSED = 5
 
 let pilaren
 let bird = {}
@@ -170,6 +171,10 @@ const reset = (cont) => {
   if (!cont) noLoop()
 }
 
+function mouseClicked() 
+{gameState==='PAUSED'?
+gameState='PLAY': gameState= 'PAUSED'}
+
 /**
  * draw
  * de code in deze functie wordt meerdere keren per seconde
@@ -201,3 +206,7 @@ function draw() {
       break
   }
 }
+
+function mouseClicked() 
+{gameState==='PAUSED'?
+gameState='PLAY': gameState= 'PAUSED'}
