@@ -186,7 +186,7 @@ function draw() {
       setupVogel(bX, bY)
       spelStatus = PLAY
       break;
-    case PLAY;
+    case PLAY:
       if(!mouseIsPressed){
         pilaren= makePillars(pilaren)
       }   
