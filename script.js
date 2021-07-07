@@ -194,6 +194,10 @@ function draw() {
       const collision = tekenVeld(pilaren, bird)
       if(keyIsPressed) {
         beweegVogel(JUMP)
+        PAUSED:
+        tekenVeld(pilaren, bird)
+        beweegVogel(0)
+        break;
       } else {
         beweegVogel(GRAVITY)
       }
