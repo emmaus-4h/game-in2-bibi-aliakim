@@ -171,9 +171,6 @@ const reset = (cont) => {
   if (!cont) noLoop()
 }
 
-function mouseClicked() 
-{gameState===PAUSED?
-gameState=PLAY: gameState= PAUSED}
 
 /**
  * draw
@@ -189,14 +186,19 @@ function draw() {
       setupVogel(bX, bY)
       spelStatus = PLAY
       break;
-    case PLAY:
-      pilaren = makePillars(pilaren)
-      const collision = tekenVeld(pilaren, bird)
+    case PLAY;
+      if(!mouseIsPressed){
+        pilaren= makePillars(pilaren)
+      }   
+      const collision = 
+      tekenVeld (pilaren, bird) 
+      if (mouseIsPressed){
+        beweegVogel(0)
+        break;
+      }   
       if(keyIsPressed) {
         beweegVogel(JUMP)
-      if (mouseIsPressed)
         tekenVeld(pilaren, bird)
-        beweegVogel(0)
         break;
       } else {
         beweegVogel(GRAVITY)
