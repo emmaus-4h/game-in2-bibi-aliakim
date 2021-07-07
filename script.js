@@ -207,6 +207,4 @@ function draw() {
   }
 }
 
-function mouseClicked() 
-{gameState==='PAUSED'?
-gameState='PLAY': gameState= 'PAUSED'}
+
